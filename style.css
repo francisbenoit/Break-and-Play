@@ -1,0 +1,87 @@
+body {
+  font-family: 'Space Mono', monospace;
+}
+
+#break, #and, #play {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.square1 {
+  width: 1in;
+  height: 1in;
+  border: 1px solid rgba(255, 0, 0, 0);
+  display: inline-block;
+  margin-bottom: -7px;
+  z-index: 10;
+}
+.square2 {
+  width: 1in;
+  height: 1in;
+  border: 1px solid rgba(0, 0, 255, 0);
+  display: inline-block;
+  margin-bottom: -7px;
+  z-index: 5;
+  background: transparent;
+}
+.square3 {
+  width: 1in;
+  height: 1in;
+  border: 1px solid rgba(0, 255, 0, 0);
+  display: inline-block;
+  margin-bottom: -7px;
+  z-index: 2;
+}
+.title {
+  position: fixed;
+  transform: rotate(-90deg);
+  text-transform:uppercase;
+  text-decoration: underline;
+  font-size: 20pt;
+}
+#grid {
+  width: 600px;
+  margin-top: 82px;
+  margin-left: 90px;
+  z-index: 50;
+}
+.cross {
+  background: silver;
+  height: 30px;
+  position: relative;
+  width: 1px;
+  display: inline-block;
+  margin-bottom: 10.2%;
+  margin-right: 16.17%;
+}
+.cross::after {
+  background: silver;
+  content: "";
+  height: 1px;
+  left: -15px;
+  position: absolute;
+  top: 15px;
+  width: 30px;
+}
+canvas {
+  display: none;
+}
+p {
+  position: absolute;
+  font-family: 'Space Mono',monospace;
+  font-size: 100pt;
+  font-weight: 700;
+  margin: 0;
+  margin-top: -54px;
+  margin-left: 5px;
+  color: rgba(0, 0, 255, 0.7);
+}
+#foot {
+  position: fixed;
+  font-size: 11pt;
+  font-weight: 400;
+  top: 900px;
+  right: 50px;
+  color: black;
+}
